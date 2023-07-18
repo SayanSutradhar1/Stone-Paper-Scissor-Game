@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(bg.jpg) no-repeat center center/cover;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+}
+.heading{
+    margin-bottom: 90px;
+    font-size: 2.8rem;
+    color: rgb(107, 107, 171);
+}
+
+
+.buttons{
+    margin: 1rem 0;
+}
+.btn{
+    padding: 17px;
+    margin: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: bottom;
+    backdrop-filter: blur(30px);
+    color: white;
+    border: 2px solid;
+}
+
+.btn:hover{
+    border: 2px solid rgb(42, 158, 173);
+    color: rgb(14, 226, 152);
+}
+.count{
+    padding: 3px;
+    margin: 20px 15px;
+}
+#resetbutton{
+    display: none;
+    padding: 17px;
+    margin: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: bottom;
+    backdrop-filter: blur(30px);
+    color: white;
+    border: 2px solid;
+}
+#resetbutton:hover{
+    border: 2px solid rgb(42, 158, 173);
+    color: rgb(14, 226, 152);
+}
+.resultdiv{
+    margin: 5px 0;
+}
+.container #compChoose,#result{
+    color: gray;
+    font-size: 2rem;
+}
+
+@media (min-width:583px) and (max-width:800px) {
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    body{
+        height: 100vh;
+    }
+    .container{
+        height: 50vh;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
+@media (max-width:583px) {
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container{
+        height: 100vh;
+    }
+    body{
+        height: 100%;
+        position: static;
+    }
+}

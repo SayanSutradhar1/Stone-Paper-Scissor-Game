@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    <section class="section flex center text-center">
+        <div class="container left flex center column">
+            <h1 class="heading">Play Rock Paper Scissor Online</h1>
+            <h3>Choose Rock Paper or Scissor</h3>
+            <div class="buttons">
+                <button class="btn" id="R">Rock</button>
+                <button class="btn" id="P">Paper</button>
+                <button class="btn" id="S">Scissor</button>
+            </div>
+            <div class="flex center">
+                <h3 class="count" id="won">Won : 0</h3>
+                <h3 class="count" id="lost">Lost : 0</h3>
+                <h3 class="count" id="draw">Draw : 0</h3>
+            </div>
+        </div>
+        <div class="container flex center column">
+            <h1 class="resultdiv">Welcome to this game</h1>
+            <h2 class="resultdiv" id="content"></h2>
+            <h4 class="resultdiv" id="comp"></h4>
+            <h2 class="resultdiv" id="compChoose"></h2>
+            <h1 class="resultdiv" id="result"></h1>
+            <div class="reset buttons">
+                <button id="resetbutton">Reset</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
